@@ -1,0 +1,206 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 0; /* إزالة المساحة الإضافية */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin: 80px 0 20px; /* المسافة بين الـ header و navbar العلوي */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Navbar */
+.top-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 0px 3px rgb(160, 160, 160);  padding: 15px 5px;
+    position: fixed; /* لتثبيت الشريط */
+    width: 100%;
+    z-index: 1000; /* لضمان ظهور الشريط فوق المحتوى */
+}
+.bottom-navbar{
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 0px 3px rgb(160, 160, 160);  
+    position: fixed; /* لتثبيت الشريط */
+    width: 100%;
+    z-index: 1000; /* لضمان ظهور الشريط فوق المحتوى */
+    padding-left: 12px;
+    display: flex;
+
+}
+.bottom-navbar li p{
+color: #001427ad;    
+}
+.top-navbar {
+    top: 0; /* تثبيت الشريط العلوي */
+}
+.help{
+    padding-left: 35px;
+}
+.prod{
+    padding-left: 35px;
+}
+@media only screen and (max-width: 400px) {
+    .help{
+        padding-left: 15px;
+    }.prod{
+        padding-left: 20px;
+    }
+
+}
+
+.bottom-navbar {
+    bottom: 0; /* تثبيت الشريط السفلي */
+}
+
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.navbar ul li a .top {
+    width: 35px;
+    height: 33px;
+    border-radius: 50%; /* لجعل الصورة دائرية، احذف هذه السطر إن لم تكن تريد ذلك */
+    position: fixed;
+    left: 87%;
+    border: solid #0052FF 5px;
+}
+
+.navbar ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Section */
+section {
+    width: 100%;
+    max-width: 600px;
+    margin: 66px auto; /* مساحة لتجنب التداخل مع navbar */
+    padding-bottom: 60px; /* لضمان وجود مسافة أسفل المحتوى لتجنب تداخل الشريط السفلي */
+}
+
+h2 {
+    font-size: 19px;
+    color: #000;
+    margin-bottom: 18px;
+    padding-left: 13px;
+}
+
+.account-card {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+    width: 91%;
+}
+
+.account-title {
+    font-size: 1.2rem;
+    color: #001427d9;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.account-balance {
+    font-size: 1.5rem;
+    color: #001427d9;
+    font-weight: bold;
+}
+.history{
+    font-size: 18px;
+    color: #001427d9;
+    padding-top: 18px;
+
+}
+
+.blue-card {
+    background-color: #afc8ffc7;
+}
+
+.pink-card {
+    background-color: #fae4f1c7 ;
+}
+.arrows {
+    position: relative;
+    width: 20px; /* عرض العمود */
+    height: 60px; /* طول العمود */
+    margin: 50px;
+  }
+  
+  .arrows::before,
+  .arrows::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent; /* مثلث */
+  }
+  
+  .arrows::before {
+    border-bottom: 10px solid black; /* سهم يتجه للأسفل */
+    top: 0;
+  }
+  
+  .arrows::after {
+    border-top: 10px solid black; /* سهم يتجه للأعلى */
+    bottom: 0;
+  }
+.nav-item > .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 14%;
+    height: 4px;
+    bottom: 67px;
+    left: 16px;
+    background-color: #fd7792;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    border-radius: 40px;
+    z-index: -1; }
+     .nav-item.active > a:before {
+        visibility: visible;
+        background-color: #f75e7d
+        ;
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1); }

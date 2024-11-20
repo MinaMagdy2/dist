@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #012547fa;
+    font-family: Arial, sans-serif;
+
+
+}
+.header{
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 10000;
+
+}
+.topnav{
+    border-bottom: 2px solid rgb(160, 160, 160); /* سمك الخط ولونه */
+    display: flex;
+    background-color: #ffffff;
+    position: fixed; /* لتثبيت الشريط */
+    width: 100%;
+    z-index: 1000; /* لضمان ظهور الشريط فوق المحتوى */
+    padding-left: 12px;
+    display: flex;
+}
+    .div {
+        margin-top: 26px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid rgba(160, 160, 160, 0.31);
+        border-top: 2px solid rgba(160, 160, 160, 0.31);
+        /* سمك الخط ولونه */}
+        .div img{
+            width: 105px;
+  position: relative;
+  left: 34%;
+        }
+        .div h2{
+            padding-top: 25px;
+            padding-right: 46px;
+        }
+        
+    
+    .header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.header ul li {
+    display: inline;
+    padding-left: 45px;
+    font-size: 21px;
+    padding-bottom: 20px;
+
+}
+    .nav-item > .nav-link:before {
+        content: "";
+        position: absolute;
+        width: 56%;
+        height: 6px;
+        bottom: 0.5%;
+        left: 0px;
+        background-color: #fd7792;
+ }
+         .nav-item.active > a:before {
+            visibility: visible;
+            background-color: #f75e7d
+            ;
+            -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            transform: scaleX(1); }
+            .go{
+                color: #001427d4  !important;
+                padding-left: 69px;
+
+            }
+            .bottom-navbar{
+                display: flex;
+                background-color: #ffffff;
+                box-shadow: 0 0px 3px rgb(160, 160, 160);  
+                position: fixed; /* لتثبيت الشريط */
+                width: 100%;
+                z-index: 1000; /* لضمان ظهور الشريط فوق المحتوى */
+                padding-left: 12px;
+                display: flex;
+            
+            }
+            .bottom-navbar li p{
+            color: #001427ad;    
+            }
+            .top-navbar {
+                top: 0; /* تثبيت الشريط العلوي */
+            }
+            .help{
+                padding-left: 35px;
+            }
+            .prod{
+                padding-left: 35px;
+            }
+            @media only screen and (max-width: 400px) {
+                .help{
+                    padding-left: 15px;
+                }.prod{
+                    padding-left: 20px;
+                }
+            
+            }
+            
+            .bottom-navbar {
+                bottom: 0; /* تثبيت الشريط السفلي */
+            }
+            .navbar ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 20px;
+            }
+            
+            .navbar ul li {
+                display: inline;
+            }
+            
+            .navbar ul li a {
+                color: black;
+                text-decoration: none;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-weight: bold;
+            }
+            .nav-item > .nav-linkbot:before {
+                content: "";
+                position: absolute;
+                width: 14%;
+                height: 4px;
+                bottom: 67px;
+                left: 16px;}
+                section p, section h2{
+                    text-align: end;
+                    padding-right: 17px;
+                    padding-bottom: 5px;
+                }
+                .sec{
+                    padding-left: 15px;
+                    margin-top: 40px;
+                }
+                .sec p{
+                    line-height: 28px;
+                    padding-right: 18px;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                th, td {
+                    text-align: left;
+                    padding: 10px;
+                    padding-left: 22px;
+                            }
+                th {
+                    font-weight: bold;
+                }
+                td {
+                    font-size: 16px;
+                    color:  #00000094 !important   ; 
+
+                }
+                tr {
+                    position: relative;
+                }
+                tr::after {
+                    content: '';
+                    display: block;
+                    height: 1px;
+                    background-color: #ddd;
+                    width: calc(100% - 40px); /* الخط أقل من عرض الجدول */
+                    margin: 0 auto; /* خط مركزي */
+                    position: absolute;
+                    bottom: 0;
+                    left: 20px; /* مسافة من الجانبين */
+                }
+                tr:last-child::after {
+                    display: none; /* إزالة الخط من آخر صف */
+                }
+                .left{
+                    text-align: end;
+  padding-right: 22px;
+  font-weight: bold;
+                }
+                .circle {
+                    width: 84px;
+                    height: 78px;
+                    border: 2px solid #B45421; /* لون وسمك الدائرة */
+                    border-radius: 50%; /* لجعل الشكل دائري */
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #B45421 !important;
+                    font-size: 50px; /* حجم الحرف */
+                    font-weight: bold;
+                    font-family: Arial, sans-serif;
+                    position: relative;
+                    left: 39%;
+                }
+                .circle::after {
+                    content: '';
+                    position: absolute;
+                    top: 20%;
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid #A54E1F;
+                    border-radius: 50%;
+                }
+                span{
+                    color: #B45421 !important;
+
+                }
