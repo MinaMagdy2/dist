@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 
 
+
+}
+body{
+    height: 1350px;
 }
 .header{
     text-align: center;
@@ -175,17 +179,18 @@
                 tr {
                     position: relative;
                 }
-                tr::after {
-                    content: '';
-                    display: block;
-                    height: 1px;
-                    background-color: #ddd;
-                    width: calc(100% - 40px); /* الخط أقل من عرض الجدول */
-                    margin: 0 auto; /* خط مركزي */
-                    position: absolute;
-                    bottom: 0;
-                    left: 20px; /* مسافة من الجانبين */
+                .bod{
+                    border-top: solid 2px #01254724;
+                    width: 90%;
+                    margin-left: 21px;
                 }
+                .aft {
+                    border-bottom: 1px solid;
+                    width: calc(157% - 40px);
+                    display: inline-block;
+                    margin-left: 23px;
+                    margin-bottom: 21px;
+                  }        
                 tr:last-child::after {
                     display: none; /* إزالة الخط من آخر صف */
                 }
